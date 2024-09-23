@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D-100 새해 챌린지</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="dday-display"></h1>
+      </header>
+
+      <main>
+        <h2>
+          <span class="challenge-title">새해까지 100 Day Challenge</span>
+        </h2>
+        <div id="goal-container">
+          <h3 id="goal-display" onclick="editGoal()">새해까지 나의 목표는?</h3>
+          <button onclick="editGoal()">수정</button>
+        </div>
+        <p id="completed-count">지금까지 완료한 목표: 0개</p>
+
+        <div id="frog-grid"></div>
+      </main>
+    </div>
+
+    <div id="alert" class="alert">
+      <div class="alert-content">
+        <p id="alert-message"></p>
+        <button onclick="closeAlert()">확인</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

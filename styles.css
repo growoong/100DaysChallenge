@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.challenge-title {
+  position: relative;
+  font-size: 1.5em;
+}
+
+.challenge-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #ffd700;
+  transform: skew(-12deg);
+}
+
+#goal-container {
+  margin: 20px 0;
+}
+
+#goal-display {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#frog-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.frog-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.frog-icon.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.date-label {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.alert {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
